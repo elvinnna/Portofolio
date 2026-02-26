@@ -425,11 +425,88 @@ nav{
 
 
 /* Footer */
-footer{
-  background:var(--teal);
-  color:var(--cream);
-  text-align:center;
-  padding:30px;
+footer {
+  background: var(--teal);
+  color: var(--cream);
+  padding: 50px 60px 20px;
+}
+
+/* Container utama */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+/* Kiri & Kanan 50% */
+.footer-left,
+.footer-nav {
+  flex: 1;
+}
+
+/* Bagian kiri */
+.footer-left {
+  text-align: left;
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* Social icon */
+.footer-social a {
+  color: var(--cream);
+  margin-right: 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+
+/* Bagian kanan (Quick Navigation) */
+.footer-nav {
+  text-align: right;
+}
+
+.footer-nav h4 {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+}
+
+.footer-nav ul li a {
+  color: var(--cream);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-nav ul li a:hover {
+  padding-right: 5px;
+  opacity: 0.8;
+}
+
+/* Bagian paling bawah */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 /* Responsive */
@@ -939,7 +1016,39 @@ footer{
 
 
 <footer>
-© 2026 Elvina Masrurotul | SMK TKJ
+  <div class="footer-container">
+
+    <!-- KIRI -->
+    <div class="footer-left">
+      <h3>Elvina Masrurotul</h3>
+      <p>SMK TKJ | Network & IT Enthusiast</p>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ell.vinaa_?igsh=eXprNG5jbGY3NG42" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/elvinnna" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://youtube.com/@user-elvinams?si=qQTM0Pe8bvqmEgdi" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="footer-right">
+  <h4>Core Skills</h4>
+  <p>Networking & Mikrotik</p>
+  <p>Web Development</p>
+  <p>Graphic Desainer</p>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Elvina Masrurotul. All Rights Reserved.</p>
+  </div>
 </footer>
 
 <script>
